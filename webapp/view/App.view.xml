@@ -3,20 +3,8 @@
   xmlns:core="sap.ui.core"
   xmlns="sap.m" controllerName="companyRepo.appName.controller.App" displayBlock="true">
   <App>
-    <Page>
-      <content>
-        <OverflowToolbar visible="{= !!${view>/isMobile} }">
-          <SegmentedButton selectedKey="all" selectionChange=".onFilter" class="sapMSegmentedButtonNoAutoWidth">
-            <items>
-              <SegmentedButtonItem text="All" key="all"/>
-              <SegmentedButtonItem text="Active" key="active"/>
-              <SegmentedButtonItem text="Completed" key="completed"/>
-            </items>
-          </SegmentedButton>
-          <ToolbarSpacer />
-          <Button id="clearCompleted-footer" enabled="{/itemsRemovable}" icon="sap-icon://delete" text="{i18n>CLEAR_COMPLETED}" press=".clearCompleted"/>
-        </OverflowToolbar>
-      </content>
+    <Page title="{i18n>Header}">
+      <content></content>
     </Page>
   </App>
 </mvc:View>

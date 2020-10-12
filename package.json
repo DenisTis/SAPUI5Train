@@ -4,5 +4,8 @@
   "description": "Training for SAPUI5 applications",
   "keywords": [],
   "author": "Denis Savinov Tislenko",
-  "license": "ISC"
+  "license": "ISC",
+  "scripts": {
+    "start": "ui5 serve -o index.html"
+  }
 }

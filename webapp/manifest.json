@@ -6,7 +6,7 @@
   },
   "sap.ui5": {
     "dependencies": {
-      "minUI5Version": "1.75.0",
+      "minUI5Version": "1.76.0",
       "libs": {
         "sap.ui.core": {},
         "sap.m": {},
@@ -14,7 +14,7 @@
       }
     },
     "rootView": {
-      "viewName": "companyRepo.appName.App",
+      "viewName": "companyRepo.appName.view.App",
       "type": "XML",
       "async": true,
       "id": "app"
@@ -28,10 +28,6 @@
           "fallbackLocale": "en"
         }
       }
-      // "": {
-      //   "type": "sap.ui.model.json.JSONModel",
-      //   "uri": "model/trainModel.json"
-      // }
     },
     "resources": {
       "css": [{
