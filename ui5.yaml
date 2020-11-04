@@ -11,3 +11,10 @@ framework:
     - name: sap.ui.comp
     - name: sap.ushell
     - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+    - name: ui5-middleware-simpleproxy
+      afterMiddleware: compression
+      mountPath: /northwind
+      configuration:
+        baseUri: "https://services.odata.org/Northwind/Northwind.svc/"
