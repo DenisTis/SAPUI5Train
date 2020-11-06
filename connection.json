@@ -1,0 +1,6 @@
+{
+  "sap": {
+    "target": "http://path:port/",
+    "auth": "user:password"
+  }
+}

@@ -8,7 +8,8 @@ sap.ui.define(
         var me = this;
         me.getView().setBusy(true);
         var oModel = new sap.ui.model.odata.v2.ODataModel({
-          serviceUrl: "/northwind",
+          // serviceUrl: "/northwind",
+          serviceUrl: "/sap/opu/odata/backendServerPath",
         });
         oModel.metadataLoaded().then(function(oEvent) {
           console.log(oEvent);

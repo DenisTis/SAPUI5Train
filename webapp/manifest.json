@@ -2,7 +2,16 @@
   "_version": "0.0.1",
   "sap.app": {
     "id": "companyRepo.appName",
-    "type": "application"
+    "type": "application",
+    "dataSources": {
+      "backendService": {
+        "uri": "/sap/opu/odata/backendServicePath",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    }
   },
   "sap.ui5": {
     "dependencies": {
