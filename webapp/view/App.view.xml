@@ -4,7 +4,13 @@
   xmlns="sap.m" controllerName="companyRepo.appName.controller.App" displayBlock="true">
   <App>
     <Page title="{i18n>Header}">
-      <content></content>
+      <content>
+        <List headerText="Product Details" items="{/Products}">
+          <items>
+            <ObjectListItem title="{ProductName}" number="{ProductID}" intro="{QuantityPerUnit}"/>
+          </items>
+        </List>
+      </content>
     </Page>
   </App>
 </mvc:View>

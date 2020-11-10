@@ -1,7 +1,7 @@
 const express = require("express"),
   httpProxy = require("http-proxy"),
   fs = require("fs"),
-  proxy = new httpProxy.createProxyServer();
+  proxy = new httpProxy.createProxyServer({ changeOrigin: true, target: { protocol: "https", host: "services.odata.org" } });
 
 //appRoute is the path on which ui5 serve is started
 const appRoute = {
@@ -23,7 +23,7 @@ var allowCrossDomain = function(req, res) {
   } else {
     var dirname = req.url.replace(/^\/([^\/]*).*$/, "$1");
     var route = routing[dirname] || appRoute;
-    console.log(req.method + ": " + route.target + req.url);
+    // console.log(req.method + ": " + route.target + req.url);
     proxy.web(req, res, route);
   }
 };

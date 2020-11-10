@@ -1,6 +1,6 @@
 {
-  "sap": {
-    "target": "http://path:port/",
+  "Northwind": {
+    "target": "https://services.odata.org/V2",
     "auth": "user:password"
   }
 }

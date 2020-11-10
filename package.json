@@ -6,7 +6,8 @@
   "author": "Denis Savinov Tislenko",
   "license": "ISC",
   "scripts": {
-    "start": "ui5 serve -o index.html"
+    "serveUI5": "ui5 serve",
+    "proxy": "node proxy.js"
   },
   "devDependencies": {
     "express": "^4.17.1",
