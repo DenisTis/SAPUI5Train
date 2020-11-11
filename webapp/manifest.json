@@ -5,7 +5,7 @@
     "type": "application",
     "dataSources": {
       "backendService": {
-        "uri": "/sap/opu/odata/backendServicePath",
+        "uri": "/Northwind/Northwind.svc",
         "type": "OData",
         "settings": {
           "odataVersion": "2.0"
@@ -29,6 +29,7 @@
       "id": "app"
     },
     "models": {
+      "": { "dataSource": "backendService" },
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
