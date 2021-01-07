@@ -10,6 +10,27 @@
             <ObjectListItem title="{ProductName}" number="{ProductID}" intro="{QuantityPerUnit}"/>
           </items>
         </List>
+
+  <!-- <Table id="PZaccountsTable2"
+    items="{mainJSON>/accounts}">
+    <columns>
+      <Column width="11rem">
+        <Text text="posNo"/>
+      </Column>
+      <Column width="11rem">
+        <Text text="currency"/>
+      </Column>
+    </columns>      
+    <items>
+      <ColumnListItem>
+        <cells>
+          <Text text="{mainJSON>posNo}" /> 
+          <Text text="{mainJSON>currency}" />           
+        </cells>
+      </ColumnListItem>
+     </items> 
+  </Table>   -->
+
       </content>
     </Page>
   </App>

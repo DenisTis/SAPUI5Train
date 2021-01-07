@@ -1,6 +1,8 @@
 sap.ui.define(
-  ["sap/ui/core/mvc/Controller"],
-  function(Controller) {
+  ['sap/m/MessageToast',
+    'sap/ui/model/json/JSONModel',
+    'sap/ui/core/mvc/Controller'],
+  function (MessageToast, JSONModel, Controller) {
     "use strict";
 
     return Controller.extend("companyRepo.appName.controller.App", {
@@ -20,6 +22,31 @@ sap.ui.define(
       //   me.getView().setBusy(false);
       // });
       // },
+      onInit() {
+        var content = {
+          accounts: [
+            {
+              posNo: "001",
+              currency: "EUR"
+            },
+            {
+              posNo: "002",
+              currency: "USD"
+            },
+            {
+              posNo: "003",
+              currency: "PLN"
+            }
+          ]
+        };
+        var mainJSON = new JSONModel(content);
+        this.getView().setModel(mainJSON, "mainJSON");
+      },
+      
+      onListItemPressed(oEvent) {
+        MessageToast.show("Pressed");
+        console.log("dupa");
+      }
     });
   }
 );
